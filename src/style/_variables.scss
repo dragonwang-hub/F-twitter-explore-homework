@@ -15,4 +15,9 @@ $color-base: $gray !default;
 $heading-color: $white !default;
 $link-color: $gray !default;
 $link-hover-color: darken($link-color, 15%) !default;
-$border-color: rgb(31, 142, 212);
+$border-color: rgb(61, 84, 102);
+$base-color: rgb(31, 142, 212);
+
+$width-per100: 100%;
+$nav-button-width: 80px;
+$basic-margin: 10px;

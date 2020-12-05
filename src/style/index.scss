@@ -9,6 +9,7 @@
   padding-left: 10%;
   padding-right: 10%;
   height: 100px;
+  border-bottom: 2px $border-color solid;
 }
 
 .nav-buttons {
@@ -16,21 +17,60 @@
 }
 
 %login {
-  border: 2px solid $border-color;
-  @include basic-button(transparent, $border-color);
+  border: 2px solid $base-color;
+  @include basic-button(transparent, $base-color);
 }
 
 %signup {
-  @include basic-button($border-color, $white);
+  @include basic-button($base-color, $white);
 }
 
 .nav-login {
-  width: 80px;
-  margin-right: 10px;
+  width: $nav-button-width;
+  margin-right: $basic-margin;
   @extend %login;
 }
 
 .nav-signup {
-  width: 80px;
+  width: $nav-button-width;
   @extend %signup;
+}
+
+main {
+  h2 {
+    color: $heading-color;
+  }
+
+  .form {
+    width: 25%;
+    margin: 100px auto;
+    padding: 50px;
+    text-align: center;
+    border: 2px $border-color solid;
+    border-radius: 20px;
+  }
+
+  .form-login {
+    width: $width-per100;
+    @extend %login;
+  }
+
+  .form-signup {
+    width: $width-per100;
+    @extend %signup;
+  }
+
+  input {
+    background-color: transparent;
+    width: 100%;
+  }
+
+  div {
+    text-align: left;
+    margin: $basic-margin * 3 auto;
+
+    & > a {
+      color: $base-color;
+    }
+  }
 }
