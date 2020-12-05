@@ -1,3 +1,36 @@
 @import "variables";
 @import "mixins";
 @import "reboot";
+
+.header-twitter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 100px;
+}
+
+.nav-buttons {
+  display: flex;
+}
+
+%login {
+  border: 2px solid $border-color;
+  @include basic-button(transparent, $border-color);
+}
+
+%signup {
+  @include basic-button($border-color, $white);
+}
+
+.nav-login {
+  width: 80px;
+  margin-right: 10px;
+  @extend %login;
+}
+
+.nav-signup {
+  width: 80px;
+  @extend %signup;
+}

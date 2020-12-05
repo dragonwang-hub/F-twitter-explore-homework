@@ -44,3 +44,12 @@ h1 {
   color: $heading-color;
   margin: 0;
 }
+
+div {
+  border: 1px red solid;
+}
+
+form,
+header {
+  border: 1px green solid;
+}

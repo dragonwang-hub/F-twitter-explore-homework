@@ -2,3 +2,11 @@
   margin-top: 0;
   font-size: $font-size;
 }
+
+@mixin basic-button($bg-color, $base-color) {
+  background-color: $bg-color;
+  color: $base-color;
+  text-align: center;
+  height: 30px;
+  border-radius: 15px;
+}
